@@ -4,11 +4,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.sites.shortcuts import get_current_site
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
+from django.urls import reverse_lazy
 from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.views import generic
 
 from accounts.forms import RegisterForm
+from accounts.models import Pizzaiolo
 from accounts.services.email_service import EmailService
 from accounts.services.token_service import account_activation_token
 
@@ -66,7 +68,25 @@ def activate(request, uid, token):
         return HttpResponse("Activation link is invalid!")
 
 
-class CookUserDetailView(LoginRequiredMixin, generic.DetailView):
+class PizzaioloDetailView(LoginRequiredMixin, generic.DetailView):
     model = get_user_model()
-    template_name = "registration/profile.html"
+    template_name = "accounts/profile.html"
     context_object_name = "user"
+
+
+class PizzaioloUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Pizzaiolo
+    fields = ["username", "email", "years_of_experience"]
+    template_name = "accounts/update_profile.html"
+    success_url = reverse_lazy("accounts:profile")
+
+    def get_object(self, queryset=None):
+        return self.request.user
+
+
+class PizzaioloListView(LoginRequiredMixin, generic.ListView):
+    model = Pizzaiolo
+    template_name = "accounts/pizza_list.html"
+
+    def get_queryset(self):
+        return Pizzaiolo.objects.all().prefetch_related("pizzas")
