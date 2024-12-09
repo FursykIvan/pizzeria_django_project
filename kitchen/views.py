@@ -53,21 +53,21 @@ class PizzaListView(generic.ListView):
         return self.queryset
 
 
-class DishTypeCreateView(LoginRequiredMixin, generic.CreateView):
+class PizzaTypeCreateView(LoginRequiredMixin, generic.CreateView):
     model = PizzaType
     fields = ["name"]
     template_name = "kitchen/pizza_type_create_or_edit.html"
     success_url = reverse_lazy("kitchen:pizza-type-list")
 
 
-class DishTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
+class PizzaTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = PizzaType
     fields = ["name"]
     template_name = "kitchen/pizza_type_create_or_edit.html"
     success_url = reverse_lazy("kitchen:pizza-type-list")
 
 
-class DishTypeDeleteView(LoginRequiredMixin, generic.DeleteView):
+class PizzaTypeDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = PizzaType
     template_name = "kitchen/pizza_type_delete.html"
     success_url = reverse_lazy("kitchen:pizza-type-list")
@@ -91,3 +91,6 @@ class PizzaTypeListView(generic.ListView):
         if form.is_valid():
             return queryset.filter(name__icontains=form.cleaned_data["name"])
         return self.queryset
+
+class HomePage(generic.TemplateView):
+    template_name = "home.html"

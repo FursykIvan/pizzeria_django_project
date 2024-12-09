@@ -1,11 +1,10 @@
-from django.urls import include, path
+from django.urls import path
 
 from accounts.views import PizzaioloDetailView, activate, register, PizzaioloListView, PizzaioloUpdateView
 
 app_name = "accounts"
 
 urlpatterns = [
-    path("", include("django.contrib.auth.urls")),
     path("register/", register, name="register"),
     path("activate/<str:uid>/<str:token>/", activate, name="activate"),
     path("profile/", PizzaioloDetailView.as_view(), name="profile"),
