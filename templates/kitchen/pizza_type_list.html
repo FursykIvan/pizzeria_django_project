@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1>
+    Type of Pizza
+    <a href="{% url 'kitchen:pizza-type-create' %}"
+       class="btn btn-primary link-to-page">
+      Create New Type
+    </a>
+  </h1>
+  <form method="get" action="" class="form-inline">
+    {{ search_form|crispy }}
+    <input class="btn btn-secondary" type="submit" value="🔎">
+  </form>
+
+  {% if pizza_types %}
+    <table class="table">
+      <tr>
+        <th>Pizza Type</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+
+      {% for pizza_type in pizza_types %}
+        <tr>
+          <td>
+            <a href="{% url 'kitchen:pizza-type-detail' pk=pizza_type.id %}"> {{ pizza_type.name }} </a>
+          </td>
+          <td>
+            <a href="{% url 'kitchen:pizza-type-update' pk=dish_type.id %}">
+              Update
+            </a>
+          </td>
+          <td>
+            <a style="color: red"
+               href="{% url 'kitchen:pizza-type-delete' pk=dish_type.id %}">
+              Delete
+            </a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  {% else %}
+    <p>There are currently no pizza types in the system.</p>
+  {% endif %}
+{% endblock %}

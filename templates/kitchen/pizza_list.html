@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1>
+    List of Pizzas
+    <a href="{% url 'kitchen:pizza-create' %}"
+       class="btn btn-primary link-to-page">
+      Create New Pizza
+    </a>
+  </h1>
+  <form method="get" action="" class="form-inline">
+        {{ search_form|crispy }}
+        <input class="btn btn-secondary" type="submit" value="🔎">
+      </form>
+  {% if dishes %}
+    <table class="table">
+      <tr>
+        <th>Pizza</th>
+        <th>Type of Pizzas</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Pizzaioli</th>
+      </tr>
+      {% for pizza in pizzas %}
+        <tr>
+          <td>
+            <a href="{% url 'kitchen:pizza-detail' pk=pizza.id %}"> {{ pizza.name }} </a>
+          </td>
+          <td>
+            {{ pizza.pizza_type.name }}
+          </td>
+          <td>
+            {{ pizza.description }}
+          </td>
+          <td>
+            {{ pizza.price }}
+          </td>
+          <td>
+            <ul>
+            {% for pizzaioli in pizza.pizzaioli.all %}
+              <li><a href="{% url 'accounts:profile' %}">{{ pizzaioli.username }}</a></li>
+            {% endfor %}
+            </ul>
+          </td>
+          <td>
+            <a href="{% url 'kitchen:pizza-update' pk=pizza.id %}">
+              Update
+            </a>
+          </td>
+          <td>
+            <a style="color: red"
+               href="{% url 'kitchen:pizza-delete' pk=pizza.id %}">
+              Delete
+            </a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  {% else %}
+    <p>There is no type of pizzas at this moment</p>
+  {% endif %}
+{% endblock %}

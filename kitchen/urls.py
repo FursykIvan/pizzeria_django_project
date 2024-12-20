@@ -22,8 +22,8 @@ urlpatterns = [
     path("pizza/<int:pk>/detail/", PizzaDetailView.as_view(), name="pizza-detail"),
     path("pizza/<int:pk>/update/", PizzaUpdateView.as_view(), name="pizza-update"),
     path("pizza/<int:pk>/delete/", PizzaDeleteView.as_view(), name="pizza-delete"),
-    path("pizza_type/", PizzaTypeListView.as_view(), name="dish-type-list"),
-    path("pizza_type/create/", PizzaTypeCreateView.as_view(), name="dish-type-create"),
-    path("pizza_type/<int:pk>/update/", PizzaTypeUpdateView.as_view(), name="dish-type-update"),
-    path("pizza_type/<int:pk>/delete/", PizzaTypeDeleteView.as_view(), name="dish-type-delete"),
+    path("pizza_type/", PizzaTypeListView.as_view(), name="pizza-type-list"),
+    path("pizza_type/create/", PizzaTypeCreateView.as_view(), name="pizza-type-create"),
+    path("pizza_type/<int:pk>/update/", PizzaTypeUpdateView.as_view(), name="pizza-type-update"),
+    path("pizza_type/<int:pk>/delete/", PizzaTypeDeleteView.as_view(), name="pizza-type-delete"),
 ]

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Pizza: {{ pizza.name }}</h1>
+  <p>Description: {{ pizza.description }}</p>
+  <p>Type: <a href="{% url 'kitchen:pizza-type-detail' pizza.pizza_type.id %}">{{ pizza.pizza_type.name }}</a> </p>
+  <p>Price: {{ pizza.price }}</p>
+  <a href="{% url 'kitchen:pizza-update' pizza.pk %}" class="btn btn-primary">Update</a>
+  <a href="{% url 'kitchen:pizza-delete' pizza.pk %}" class="btn btn-danger">Delete</a>
+  <ul>
+    {% for pizzaiolo in pizza.pizzaioli.all %}
+      <li>
+        <a href="{% url 'accounts:profile' pizzaiolo.id %}"> {{ pizzaiolo.id }} {{ pizzaiolo.first_name }} {{ pizzaiolo.last_name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

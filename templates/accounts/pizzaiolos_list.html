@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1>Pizzaiolos</h1>
+  <ul>
+    {% for pizzaiolo in object_list %}
+      <li><a href="{% url 'accounts:profile' %}">{{ pizzaiolos.username }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -44,7 +44,7 @@ def register(request):
 
             return redirect("accounts:login")
 
-    return render(request, "registration/register.html", {"form": form})
+    return render(request, "accounts/register.html", {"form": form})
 
 
 def activate(request, uid, token):
@@ -86,7 +86,7 @@ class PizzaioloUpdateView(LoginRequiredMixin, generic.UpdateView):
 
 class PizzaioloListView(LoginRequiredMixin, generic.ListView):
     model = Pizzaiolo
-    template_name = "accounts/pizza_list.html"
+    template_name = "accounts/pizzaiolos_list.html"
 
     def get_queryset(self):
         return Pizzaiolo.objects.all().prefetch_related("pizzas")

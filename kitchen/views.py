@@ -15,26 +15,26 @@ class PizzaDetailView(generic.DetailView):
 class PizzaCreateView(LoginRequiredMixin, generic.CreateView):
     model = Pizza
     fields = ["name", "description", "pizza_type", "price", "pizzaioli"]
-    template_name = "kitchen/pizza_create_or_edit.html"
+    template_name = "kitchen/pizza_form.html"
     success_url = reverse_lazy("kitchen:pizza-list")
 
 
 class PizzaUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Pizza
     fields = ["name", "description", "pizza_type", "price", "pizzaioli"]
-    template_name = "kitchen/pizza_create_or_edit.html"
+    template_name = "kitchen/pizza_form.html"
     success_url = reverse_lazy("kitchen:pizza-list")
 
 
 class PizzaDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Pizza
-    template_name = "kitchen/pizza_delete.html"
+    template_name = "kitchen/pizza_confirm_delete.html"
     success_url = reverse_lazy("kitchen:pizza-list")
 
 
 class PizzaListView(generic.ListView):
     model = Pizza
-    template_name = "kitchen/pizza-list.html"
+    template_name = "kitchen/pizza_list.html"
     context_object_name = "pizzas"
     queryset = Pizza.objects.all().prefetch_related("pizzaioli")
     paginate_by = 5
@@ -56,20 +56,20 @@ class PizzaListView(generic.ListView):
 class PizzaTypeCreateView(LoginRequiredMixin, generic.CreateView):
     model = PizzaType
     fields = ["name"]
-    template_name = "kitchen/pizza_type_create_or_edit.html"
+    template_name = "kitchen/pizza_type_detail.html"
     success_url = reverse_lazy("kitchen:pizza-type-list")
 
 
 class PizzaTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = PizzaType
     fields = ["name"]
-    template_name = "kitchen/pizza_type_create_or_edit.html"
+    template_name = "kitchen/pizza_type_form.html"
     success_url = reverse_lazy("kitchen:pizza-type-list")
 
 
 class PizzaTypeDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = PizzaType
-    template_name = "kitchen/pizza_type_delete.html"
+    template_name = "kitchen/pizza_type_confirm_delete.html"
     success_url = reverse_lazy("kitchen:pizza-type-list")
 
 class PizzaTypeListView(generic.ListView):

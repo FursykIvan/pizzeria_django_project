@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Pizza Type: {{ pizza_type.name }}</h1>
+  {% if pizza_type.pizzas.all %}
+    <h2>Pizzas:</h2>
+    <ul>
+      {% for pizza in pizza_type.pizzas.all %}
+        <li>
+          <a href="{% url 'kitchen:pizza-detail' pizza.pk %}">{{ pizza.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No pizzas found for this pizza type.</p>
+  {% endif %}
+
+  <a href="{% url 'kitchen:pizza-type-update' dish_type.pk %}" class="btn btn-primary">Update</a>
+  <a href="{% url 'kitchen:pizza-type-delete' dish_type.pk %}" class="btn btn-danger">Delete</a>
+{% endblock %}

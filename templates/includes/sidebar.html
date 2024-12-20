@@ -1,0 +1,15 @@
+<ul class="sidebar-nav list-group d-flex flex-column">
+ <li class="list-group-item">
+   <form action="{% url 'login' %}" method="POST" class="login-form">
+     {% csrf_token %}
+     <button type="submit" class="btn btn-primary">Login</button>
+   </form>
+ </li>
+  <li class="list-group-item">
+    <form action="{% url 'logout' %}" method="POST" class="logout-form">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-primary">Logout</button>
+    </form>
+  </li>
+  <li class="list-group-item"><a href="{% url 'accounts:register' %}">Register</a></li>
+</ul>
