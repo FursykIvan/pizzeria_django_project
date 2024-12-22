@@ -76,7 +76,7 @@ class PizzaioloDetailView(LoginRequiredMixin, generic.DetailView):
 
 class PizzaioloUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Pizzaiolo
-    fields = ["username", "email", "years_of_experience"]
+    fields = ["username", "email", "year_of_experience"]
     template_name = "accounts/update_profile.html"
     success_url = reverse_lazy("accounts:profile")
 

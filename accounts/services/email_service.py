@@ -24,6 +24,3 @@ class EmailService:
 
         message = render_to_string("registration/acc_activate_email.html", context)
         send_mail(mail_subject, message, from_email, [to_email])
-
-        # or for async
-        # threading.Thread(target=send_mail, args=(mail_subject, message, from_email, [to_email])).start()

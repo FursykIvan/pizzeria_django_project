@@ -7,7 +7,7 @@ app_name = "accounts"
 urlpatterns = [
     path("register/", register, name="register"),
     path("activate/<str:uid>/<str:token>/", activate, name="activate"),
-    path("profile/", PizzaioloDetailView.as_view(), name="profile"),
+    path("profile/<int:pk>/", PizzaioloDetailView.as_view(), name="profile"),
     path("pizzas/", PizzaioloListView.as_view(), name="pizzaiolos"),
     path("profile/update/", PizzaioloUpdateView.as_view(), name="update_profile"),
 ]

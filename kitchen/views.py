@@ -53,6 +53,12 @@ class PizzaListView(generic.ListView):
         return self.queryset
 
 
+class PizzaTypeDetailView(generic.DetailView):
+    model = PizzaType
+    template_name = "kitchen/pizza_type_detail.html"
+    context_object_name = "dish_type"
+
+
 class PizzaTypeCreateView(LoginRequiredMixin, generic.CreateView):
     model = PizzaType
     fields = ["name"]
