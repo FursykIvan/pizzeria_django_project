@@ -225,152 +225,60 @@
         "model": "accounts.pizzaiolo",
         "pk": 1,
         "fields": {
-            "password": "pbkdf2_sha256$390000$passwordhash1",
-            "last_login": null,
-            "is_superuser": false,
-            "first_name": "Giovanni",
-            "last_name": "Rossi",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T17:13:42.238Z",
-            "year_of_experience": 6,
-            "username": "italian_chef_01",
-            "email": "giovanni.rossi@example.com",
-            "groups": [],
-            "user_permissions": []
+            "password": "pbkdf2_sha256$390000$randompasswordhash1",
+            "username": "pizzaiolo_angelo",
+            "first_name": "Angelo",
+            "last_name": "Ricci",
+            "email": "angelo.ricci@pizzashop.com",
+            "year_of_experience": 7
         }
     },
     {
         "model": "accounts.pizzaiolo",
         "pk": 2,
         "fields": {
-            "password": "pbkdf2_sha256$390000$passwordhash2",
-            "last_login": null,
-            "is_superuser": false,
-            "first_name": "Maria",
-            "last_name": "Bianchi",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T17:13:42.239Z",
-            "year_of_experience": 10,
-            "username": "maria_b",
-            "email": "maria.bianchi@example.com",
-            "groups": [],
-            "user_permissions": []
+            "password": "pbkdf2_sha256$390000$randompasswordhash2",
+            "username": "pizzaiolo_luca",
+            "first_name": "Luca",
+            "last_name": "Martini",
+            "email": "luca.martini@pizzashop.com",
+            "year_of_experience": 10
         }
     },
     {
         "model": "accounts.pizzaiolo",
         "pk": 3,
         "fields": {
-            "password": "pbkdf2_sha256$390000$passwordhash3",
-            "last_login": null,
-            "is_superuser": false,
-            "first_name": "Luca",
-            "last_name": "Verdi",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T17:13:42.240Z",
-            "year_of_experience": 8,
-            "username": "chef_luca_01",
-            "email": "luca.verdi@example.com",
-            "groups": [],
-            "user_permissions": []
+            "password": "pbkdf2_sha256$390000$randompasswordhash3",
+            "username": "pizzaiolo_mario",
+            "first_name": "Mario",
+            "last_name": "Bianchi",
+            "email": "mario.bianchi@pizzashop.com",
+            "year_of_experience": 5
         }
     },
     {
         "model": "accounts.pizzaiolo",
         "pk": 4,
         "fields": {
-            "password": "pbkdf2_sha256$390000$passwordhash4",
-            "last_login": null,
-            "is_superuser": false,
-            "first_name": "Alessandro",
-            "last_name": "Galli",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T17:13:42.240Z",
-            "year_of_experience": 7,
-            "username": "alessandro.g",
-            "email": "alessandro.galli@example.com",
-            "groups": [],
-            "user_permissions": []
+            "password": "pbkdf2_sha256$390000$randompasswordhash4",
+            "username": "pizzaiolo_francesco",
+            "first_name": "Francesco",
+            "last_name": "DeLuca",
+            "email": "francesco.deluca@pizzashop.com",
+            "year_of_experience": 8
         }
     },
     {
         "model": "accounts.pizzaiolo",
         "pk": 5,
         "fields": {
-            "password": "pbkdf2_sha256$390000$passwordhash5",
-            "last_login": null,
-            "is_superuser": false,
-            "first_name": "Sophia",
-            "last_name": "Ricci",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T17:13:42.240Z",
-            "year_of_experience": 5,
-            "username": "sophia_ricci",
-            "email": "sophia.ricci@example.com",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "accounts.pizzaiolo",
-        "pk": 6,
-        "fields": {
-            "password": "pbkdf2_sha256$870000$HpymAxiRoQ8vFMX0goQEer$0A/fTJ9mUByrls8fskJ6tSyhbFIklhfe9LwEgGkLQE8=",
-            "last_login": "2024-12-23T12:58:15.883Z",
-            "is_superuser": true,
-            "first_name": "Paolo",
-            "last_name": "Basso",
-            "is_staff": true,
-            "is_active": true,
-            "date_joined": "2024-12-23T17:15:05.288Z",
-            "year_of_experience": 15,
-            "username": "admin_pizzaiolo",
-            "email": "admin@pizzaiolo.com",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "accounts.pizzaiolo",
-        "pk": 7,
-        "fields": {
-            "password": "pbkdf2_sha256$870000$Mwa9DfMUCB9pLwFn5ILJGL$ScTxnEvqg+ZmOOWWAq74FB0fVmE0T9+x/7KkDXcmkUg=",
-            "last_login": "2024-12-23T13:28:59.902Z",
-            "is_superuser": false,
-            "first_name": "Giulia",
-            "last_name": "Ferri",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T13:28:58.421Z",
-            "year_of_experience": 4,
-            "username": "giulia_f",
-            "email": "giulia.ferri@example.com",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "accounts.pizzaiolo",
-        "pk": 8,
-        "fields": {
-            "password": "pbkdf2_sha256$870000$GCNTDDxZunLUJzZc7my37O$tk5dt+yTPngzKGmp4HMjiLepXCO630C6ZSGEyPoFBhM=",
-            "last_login": "2024-12-23T13:31:00.026Z",
-            "is_superuser": false,
-            "first_name": "Matteo",
-            "last_name": "Lombardi",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2024-12-23T13:30:58.663Z",
-            "year_of_experience": 9,
-            "username": "matteo_lombardi",
-            "email": "matteo.lombardi@example.com",
-            "groups": [],
-            "user_permissions": []
+            "password": "pbkdf2_sha256$390000$randompasswordhash5",
+            "username": "pizzaiolo_sara",
+            "first_name": "Sara",
+            "last_name": "Conti",
+            "email": "sara.conti@pizzashop.com",
+            "year_of_experience": 3
         }
     }
 ]

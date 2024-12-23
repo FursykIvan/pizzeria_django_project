@@ -1,0 +1,413 @@
+[
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$passwordhash1",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "italian_chef_01",
+        "first_name": "Giovanni",
+        "last_name": "Rossi",
+        "email": "giovanni.rossi@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T17:13:42.238Z",
+        "year_of_experience": 6,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$passwordhash2",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "maria_b",
+        "first_name": "Maria",
+        "last_name": "Bianchi",
+        "email": "maria.bianchi@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T17:13:42.239Z",
+        "year_of_experience": 10,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$passwordhash3",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "chef_luca_01",
+        "first_name": "Luca",
+        "last_name": "Verdi",
+        "email": "luca.verdi@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T17:13:42.240Z",
+        "year_of_experience": 8,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$passwordhash4",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "alessandro.g",
+        "first_name": "Alessandro",
+        "last_name": "Galli",
+        "email": "alessandro.galli@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T17:13:42.240Z",
+        "year_of_experience": 7,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$passwordhash5",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sophia_ricci",
+        "first_name": "Sophia",
+        "last_name": "Ricci",
+        "email": "sophia.ricci@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T17:13:42.240Z",
+        "year_of_experience": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$HpymAxiRoQ8vFMX0goQEer$0A/fTJ9mUByrls8fskJ6tSyhbFIklhfe9LwEgGkLQE8=",
+        "last_login": "2024-12-23T12:58:15.883Z",
+        "is_superuser": true,
+        "username": "admin_pizzaiolo",
+        "first_name": "Paolo",
+        "last_name": "Basso",
+        "email": "admin@pizzaiolo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-23T17:15:05.288Z",
+        "year_of_experience": 15,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Mwa9DfMUCB9pLwFn5ILJGL$ScTxnEvqg+ZmOOWWAq74FB0fVmE0T9+x/7KkDXcmkUg=",
+        "last_login": "2024-12-23T13:28:59.902Z",
+        "is_superuser": false,
+        "username": "giulia_f",
+        "first_name": "Giulia",
+        "last_name": "Ferri",
+        "email": "giulia.ferri@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T13:28:58.421Z",
+        "year_of_experience": 4,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$GCNTDDxZunLUJzZc7my37O$tk5dt+yTPngzKGmp4HMjiLepXCO630C6ZSGEyPoFBhM=",
+        "last_login": "2024-12-23T13:31:00.026Z",
+        "is_superuser": false,
+        "username": "matteo_lombardi",
+        "first_name": "Matteo",
+        "last_name": "Lombardi",
+        "email": "matteo.lombardi@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-23T13:30:58.663Z",
+        "year_of_experience": 9,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.pizzaiolo",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$YYxIDmWXdHNbYQGtK5r5R1$FDloyDFE+9VX87BAqi4E5LvFbcVDtkOMmFPGWvjpeM0=",
+        "last_login": "2024-12-23T00:12:11.921Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@exemple.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-23T00:11:34.826Z",
+        "year_of_experience": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen.pizzatype",
+    "pk": 1,
+    "fields": {
+        "name": "Classic Pizzas"
+    }
+},
+{
+    "model": "kitchen.pizzatype",
+    "pk": 2,
+    "fields": {
+        "name": "Gourmet Pizzas"
+    }
+},
+{
+    "model": "kitchen.pizzatype",
+    "pk": 3,
+    "fields": {
+        "name": "Specialty Pizzas"
+    }
+},
+{
+    "model": "kitchen.pizzatype",
+    "pk": 4,
+    "fields": {
+        "name": "Dessert Pizzas"
+    }
+},
+{
+    "model": "kitchen.pizzatype",
+    "pk": 5,
+    "fields": {
+        "name": "Beverages"
+    }
+},
+{
+    "model": "kitchen.pizzatype",
+    "pk": 6,
+    "fields": {
+        "name": "Appetizers"
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 1,
+    "fields": {
+        "name": "Margherita",
+        "description": "A classic pizza with fresh mozzarella, basil, and tomato sauce.",
+        "price": "15.00",
+        "pizza_type": 1,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 2,
+    "fields": {
+        "name": "Pepperoni",
+        "description": "A delicious pizza topped with pepperoni and mozzarella.",
+        "price": "16.50",
+        "pizza_type": 1,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 3,
+    "fields": {
+        "name": "Vegetarian",
+        "description": "A pizza loaded with fresh vegetables like bell peppers, olives, and mushrooms.",
+        "price": "14.00",
+        "pizza_type": 1,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 4,
+    "fields": {
+        "name": "Truffle Delight",
+        "description": "A gourmet pizza with truffle oil, wild mushrooms, and a creamy cheese blend.",
+        "price": "20.00",
+        "pizza_type": 2,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 5,
+    "fields": {
+        "name": "BBQ Chicken",
+        "description": "A tangy BBQ sauce base with grilled chicken, red onions, and cilantro.",
+        "price": "18.50",
+        "pizza_type": 2,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 6,
+    "fields": {
+        "name": "Seafood Supreme",
+        "description": "A pizza with shrimp, scallops, and crab meat, topped with a garlic butter sauce.",
+        "price": "22.00",
+        "pizza_type": 2,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 7,
+    "fields": {
+        "name": "BBQ Bacon",
+        "description": "A smoky BBQ sauce with crispy bacon, mozzarella, and fresh herbs.",
+        "price": "19.00",
+        "pizza_type": 3,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 8,
+    "fields": {
+        "name": "Four Cheese",
+        "description": "A rich pizza with mozzarella, cheddar, blue cheese, and parmesan.",
+        "price": "17.50",
+        "pizza_type": 3,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 9,
+    "fields": {
+        "name": "Hawaiian",
+        "description": "A sweet and savory pizza with ham, pineapple, and mozzarella.",
+        "price": "16.00",
+        "pizza_type": 3,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 10,
+    "fields": {
+        "name": "Nutella Pizza",
+        "description": "A sweet dessert pizza topped with Nutella, strawberries, and a sprinkle of powdered sugar.",
+        "price": "12.00",
+        "pizza_type": 4,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 11,
+    "fields": {
+        "name": "Apple Cinnamon Delight",
+        "description": "A dessert pizza with caramelized apples, cinnamon, and a cream cheese drizzle.",
+        "price": "13.00",
+        "pizza_type": 4,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 12,
+    "fields": {
+        "name": "Chocolate Fudge",
+        "description": "A rich chocolate pizza topped with fudge sauce and a sprinkle of marshmallows.",
+        "price": "14.00",
+        "pizza_type": 4,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 13,
+    "fields": {
+        "name": "Soda",
+        "description": "A refreshing soda in various flavors like cola, lemon-lime, and orange.",
+        "price": "2.50",
+        "pizza_type": 5,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 14,
+    "fields": {
+        "name": "Iced Tea",
+        "description": "Chilled tea served with a slice of lemon.",
+        "price": "3.00",
+        "pizza_type": 5,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 15,
+    "fields": {
+        "name": "Lemonade",
+        "description": "A fresh, tangy lemonade made with real lemons.",
+        "price": "3.50",
+        "pizza_type": 5,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 16,
+    "fields": {
+        "name": "Garlic Breadsticks",
+        "description": "Freshly baked breadsticks with garlic butter and mozzarella.",
+        "price": "5.00",
+        "pizza_type": 6,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 17,
+    "fields": {
+        "name": "Bruschetta",
+        "description": "Toasted bread with tomatoes, garlic, basil, and olive oil.",
+        "price": "7.00",
+        "pizza_type": 6,
+        "pizzaioli": []
+    }
+},
+{
+    "model": "kitchen.pizza",
+    "pk": 18,
+    "fields": {
+        "name": "Mozzarella Sticks",
+        "description": "Crispy mozzarella sticks served with marinara sauce.",
+        "price": "6.50",
+        "pizza_type": 6,
+        "pizzaioli": []
+    }
+}
+]
