@@ -5,22 +5,28 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+   ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+SECRET_KEY = os.environ['SECRET_KEY']
+
+
 DATABASES = {
- 'default': {
-   'ENGINE': 'django.db.backends.postgresql',
-   'NAME': os.getenv('POSTGRES_DB'),
-   'USER': os.getenv('POSTGRES_USER'),
-   'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-   'HOST': os.getenv('POSTGRES_HOST'),
-   'PORT': os.getenv('POSTGRES_DB_PORT', 5432),
-   'OPTIONS': {
-     'sslmode': 'require',
-   },
- }
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': os.environ['POSTGRES_DB'],
+       'USER': os.environ['POSTGRES_USER'],
+       'PASSWORD': os.environ['POSTGRES_PASSWORD'],
+       'HOST': os.environ['POSTGRES_HOST'],
+       'PORT': os.environ['POSTGRES_DB_PORT'],
+       'OPTIONS': {
+           'sslmode': 'require',
+       },
+   }
 }
 
 SECURE_SSL_REDIRECT = True
